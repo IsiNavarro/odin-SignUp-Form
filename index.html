@@ -10,13 +10,13 @@
 <body>
     <main>
     <div class="image-container">
-        <h1>PlaceHolder Business</h1>
+        <!-- <h1>PlaceHolder Business</h1>-->
         <img src="assets/images/header_img.jpg">
     </div>
     <form action="#" method="#">
         <div class="form-container">
         <div class="form-heading">
-            <h1>Get your vacation!</h1>
+            <h1>Start living the life you want...</h1>
         </div>
         <div class="input-container">
             <label for="fname">First name</label>
@@ -30,27 +30,27 @@
 
         <div class="input-container">
             <label for="phone">Phone number</label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" required maxlength="15">
         </div>
 
         <div class="input-container">
             <label for="email">E-mail</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
         </div>
 
         <div class="input-container">
             <label for="user-password">Password</label>
-            <input type="password" id="user-password" name="user-password" aria-autocomplete="list" required>
+            <input type="password" id="user-password" name="user-password" aria-autocomplete="list" maxlength="12" required>
         </div>
 
         <div class="input-container">
             <label for="user-password-confirm">Confirm password</label>
-            <input type="text" id="user-password-confirm" name="user-password-confirm" required>
+            <input type="password" id="user-password-confirm" name="user-password-confirm" maxlength="12" required>
         </div>
 
         <div class="btn">
             <button type="submit">Create Account</button>
-            <p class="btn-text">Already have an account..?</p><span class="btn-text-hl">LOG IN</span>
+            <p class="btn-text">Already have an account..?<span class="btn-text-hl">LOG IN</span></p>
         </div>
         </div>
 
