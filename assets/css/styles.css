@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+:root{
+    --green: #8BA6A6;
+    --blue: #E4EFEE;
+    --brown: #79523F;
+    --cream: #F2E8DB;
+    --dark-brown: #57382F;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /*border:#57382F 1px solid;*/   
+    scroll-behavior: smooth;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    overflow: hidden;
+    background-color: white;
+}
+
+main{
+    display: grid;
+    grid-template-columns: calc(100% - 60%) auto;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* FORM */
+
+form{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--green);
+}
+.form-heading{
+    grid-column: 1/-1;
+}
+.form-container > div{
+    padding: 10px;
+}
+
+/*IMAGE*/
+.image-container{
+    display: grid;
+    place-items: center;
+}
+
+.image-container > img{
+    width: calc(100%);
+}
